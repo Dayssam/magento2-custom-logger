@@ -37,7 +37,7 @@ class Data extends \Magento\Framework\App\Helper\AbstractHelper
     public function log($message, $useSeparator = false)
     {
         //Even this is not working
-        #$this->_logger->pushHandler( new \Monolog\Handler\StreamHandler( '/var/log/magepsycho_customlogger.log') );
+        #$this->_logger->pushHandler( new \Monolog\Handler\StreamHandler( 'var/log/magepsycho_customlogger.log') );
 
         if ($useSeparator) {
             $this->_logger->addDebug(str_repeat('=', 100));
